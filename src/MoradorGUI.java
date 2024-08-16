@@ -17,10 +17,8 @@ public class MoradorGUI {
         this.main = main;
         this.listaAp = listaAp;
 
-        // Criação do painel principal com BorderLayout
         panel = new JPanel(new BorderLayout());
 
-        // Painel para os inputs com GridLayout
         JPanel inputPanel = new JPanel(new GridLayout(3, 2, 10, 10));
 
         JLabel labelNome = new JLabel("Nome do Morador:");
@@ -95,8 +93,8 @@ public class MoradorGUI {
             listaMoradores.add(morador);
             JOptionPane.showMessageDialog(null, "Você adicionou o morador " + nomeMorador + " ao apartamento " + numeroApartamento);
             main.atualizarListaApartamentos();
-            textFieldNome.setText("");
-            textFieldNumeroAP.setText("");
+            textFieldNome.setText(""); // Limpa o campo de entrada
+            textFieldNumeroAP.setText(""); // Limpa o campo de entrada
             main.mostrarMenuPrincipal();
         } else {
             JOptionPane.showMessageDialog(null, "Apartamento não encontrado!");

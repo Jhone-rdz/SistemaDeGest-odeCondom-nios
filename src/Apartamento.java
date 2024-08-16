@@ -10,6 +10,15 @@ public class Apartamento {
     public ArrayList<Morador> getMoradores() {
         return moradores;
     }
+
+    public void setNumero(int numero) {
+        this.numero = numero;
+    }
+
+    public void setMoradores(ArrayList<Morador> moradores) {
+        this.moradores = moradores;
+    }
+
     public void adicionarMorador(Morador morador) {
         moradores.add(morador);
     }
