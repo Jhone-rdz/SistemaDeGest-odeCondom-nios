@@ -4,15 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c3a57a35-5506-48ad-a018-2e1e1ac1fb99" name="Changes" comment="inicial">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ApartamentoGUI.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/MoradorGUI.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ReservaGUI.java" afterDir="false" />
+    <list default="true" id="c3a57a35-5506-48ad-a018-2e1e1ac1fb99" name="Changes" comment="GUI">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Apartamento.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Apartamento.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ReservaDeEspacos.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ReservaDeEspacos.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ApartamentoGUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ApartamentoGUI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MoradorGUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MoradorGUI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ReservaGUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ReservaGUI.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -73,11 +69,20 @@
       <option name="project" value="LOCAL" />
       <updated>1723071577429</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="GUI">
+      <option name="closed" value="true" />
+      <created>1723770874498</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1723770874498</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="inicial" />
-    <option name="LAST_COMMIT_MESSAGE" value="inicial" />
+    <MESSAGE value="GUI" />
+    <option name="LAST_COMMIT_MESSAGE" value="GUI" />
   </component>
 </project>
