@@ -93,8 +93,8 @@ public class MoradorGUI {
             listaMoradores.add(morador);
             JOptionPane.showMessageDialog(null, "Você adicionou o morador " + nomeMorador + " ao apartamento " + numeroApartamento);
             main.atualizarListaApartamentos();
-            textFieldNome.setText(""); // Limpa o campo de entrada
-            textFieldNumeroAP.setText(""); // Limpa o campo de entrada
+            textFieldNome.setText("");
+            textFieldNumeroAP.setText("");
             main.mostrarMenuPrincipal();
         } else {
             JOptionPane.showMessageDialog(null, "Apartamento não encontrado!");
