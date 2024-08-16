@@ -50,7 +50,7 @@ public class ReservaGUI {
                 reserva.setFim(dataFim);
                 reserva.setNumero(numero);
                 JOptionPane.showMessageDialog(null, reserva.toString());
-                main.mostrarMenuPrincipal(); // Volta para o menu principal
+                main.mostrarMenuPrincipal();
             } else {
                 JOptionPane.showMessageDialog(null, "Apartamento não encontrado!");
             }
