@@ -26,7 +26,7 @@ public class ApartamentoGUI {
             listaAp.add(apartamento);
             JOptionPane.showMessageDialog(null, "Você adicionou o apartamento " + numeroApartamento);
             main.atualizarListaApartamentos();
-            main.mostrarMenuPrincipal(); // Volta para o menu principal
+            main.mostrarMenuPrincipal();
         });
 
         panel.add(label);
