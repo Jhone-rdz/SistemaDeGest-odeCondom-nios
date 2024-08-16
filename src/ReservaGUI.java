@@ -9,7 +9,6 @@ public class ReservaGUI {
     private JTextField dataFimTextField;
     private JTextField numeroAPTextField;
     private JPanel panel;
-    private JButton botaoVoltar;
 
     private Main main;
 
@@ -17,7 +16,7 @@ public class ReservaGUI {
         this.main = main;
 
         panel = new JPanel();
-        panel.setLayout(new GridLayout(6, 1, 10, 10));
+        panel.setLayout(new GridLayout(5, 1, 10, 10));
 
         JLabel labelEspaco = new JLabel("Espaço:");
         localTextField = new JTextField();
@@ -51,18 +50,11 @@ public class ReservaGUI {
                 reserva.setFim(dataFim);
                 reserva.setNumero(numero);
                 JOptionPane.showMessageDialog(null, reserva.toString());
-                localTextField.setText("");
-                dataInicioTextField.setText("");
-                dataFimTextField.setText("");
-                numeroAPTextField.setText("");
-                main.mostrarMenuPrincipal();
+                main.mostrarMenuPrincipal(); // Volta para o menu principal
             } else {
                 JOptionPane.showMessageDialog(null, "Apartamento não encontrado!");
             }
         });
-
-        botaoVoltar = new JButton("Voltar");
-        botaoVoltar.addActionListener(e -> main.mostrarMenuPrincipal());
 
         panel.add(labelEspaco);
         panel.add(localTextField);
@@ -73,7 +65,6 @@ public class ReservaGUI {
         panel.add(labelNumeroAP);
         panel.add(numeroAPTextField);
         panel.add(enviarButton);
-        panel.add(botaoVoltar, BorderLayout.NORTH);
     }
 
     public JPanel getPanel() {

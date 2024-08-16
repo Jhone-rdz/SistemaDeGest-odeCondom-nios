@@ -3,44 +3,35 @@ import java.awt.*;
 import java.util.ArrayList;
 
 public class ApartamentoGUI {
-    private JButton botaoEnviar;
-    private JTextField input;
+    private JButton BotaoEnviar;
+    private JTextField Input;
     private JPanel panel;
-    private JButton botaoVoltar;
 
     private Main main;
 
     public ApartamentoGUI(ArrayList<Apartamento> listaAp, Main main) {
         this.main = main;
 
-        panel = new JPanel(new BorderLayout());
-
-        JPanel inputPanel = new JPanel(new GridLayout(3, 1, 10, 10));
+        panel = new JPanel();
+        panel.setLayout(new GridLayout(3, 1, 10, 10));
 
         JLabel label = new JLabel("Número do Apartamento:");
-        input = new JTextField();
-        botaoEnviar = new JButton("Adicionar Apartamento");
+        Input = new JTextField();
+        BotaoEnviar = new JButton("Adicionar Apartamento");
 
-        botaoEnviar.addActionListener(e -> {
-            int numeroApartamento = Integer.parseInt(input.getText());
+        BotaoEnviar.addActionListener(e -> {
+            int numeroApartamento = Integer.parseInt(Input.getText());
             Apartamento apartamento = new Apartamento();
             apartamento.numero = numeroApartamento;
             listaAp.add(apartamento);
             JOptionPane.showMessageDialog(null, "Você adicionou o apartamento " + numeroApartamento);
             main.atualizarListaApartamentos();
-            input.setText("");
-            main.mostrarMenuPrincipal();
+            main.mostrarMenuPrincipal(); // Volta para o menu principal
         });
 
-        inputPanel.add(label);
-        inputPanel.add(input);
-        inputPanel.add(botaoEnviar);
-
-        botaoVoltar = new JButton("Voltar");
-        botaoVoltar.addActionListener(e -> main.mostrarMenuPrincipal());
-
-        panel.add(botaoVoltar, BorderLayout.NORTH);
-        panel.add(inputPanel, BorderLayout.CENTER);
+        panel.add(label);
+        panel.add(Input);
+        panel.add(BotaoEnviar);
     }
 
     public JPanel getPanel() {

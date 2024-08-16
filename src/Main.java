@@ -27,7 +27,6 @@ public class Main {
         cardLayout = new CardLayout();
         mainPanel = new JPanel(cardLayout);
 
-        // Instanciar GUIs e passar a instância de Main atual
         apartamentoGUI = new ApartamentoGUI(listaAp, this);
         moradorGUI = new MoradorGUI(listaMoradores, listaAp, this);
         reservaGUI = new ReservaGUI(listaAp, this);
