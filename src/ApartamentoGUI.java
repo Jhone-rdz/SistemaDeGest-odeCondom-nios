@@ -24,11 +24,11 @@ public class ApartamentoGUI {
             try {
                 int numeroApartamento = Integer.parseInt(input.getText());
                 Apartamento apartamento = new Apartamento();
-                apartamento.setNumero(numeroApartamento); // Assume que há um setter
+                apartamento.setNumero(numeroApartamento);
                 listaAp.add(apartamento);
                 JOptionPane.showMessageDialog(null, "Você adicionou o apartamento " + numeroApartamento);
                 main.atualizarListaApartamentos();
-                input.setText(""); // Limpa o campo de entrada
+                input.setText(""); 
                 main.mostrarMenuPrincipal();
             } catch (NumberFormatException ex) {
                 JOptionPane.showMessageDialog(null, "Número do apartamento inválido!");
